@@ -15,14 +15,14 @@ public class CarShopMain {
         CarShop carShop = new CarShop("Best Car", 10_000_000);
 
         System.out.println(carShop.addCar(car1));  //true
-        System.out.println(carShop.getCarsForSell().size()); //1
+        //System.out.println(carShop.getCarsForSell().size()); //1
 
         System.out.println(carShop.addCar(car2));  //false
-        System.out.println(carShop.getCarsForSell().size()); //1
+        //System.out.println(carShop.getCarsForSell().size()); //1
 
         car1.decreasePrice(10);
 
-        System.out.println(carShop.getCarsForSell().get(0).getPrice()); //2070000
+        //System.out.println(carShop.getCarsForSell().get(0).getPrice()); //2070000
 
 
         //2. rész
@@ -41,8 +41,5 @@ public class CarShopMain {
         System.out.println(carShop.carsWithBrand("Toyota").size()); //2
 
         System.out.println(carShop.carsWithBrand("BMW").size()); //0
-
-
-
     }
 }
